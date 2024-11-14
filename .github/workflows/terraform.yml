@@ -1,6 +1,6 @@
 name: Terraform workflow
 
-on: push
+on: workflow_dispatch
 
 jobs:
   apply:
