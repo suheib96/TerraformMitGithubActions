@@ -11,6 +11,10 @@ resource "aws_instance" "GithubActionsInstanz" {
   }
 }
 
+output "instance_public_ips" {
+    value = aws_instance.GithubActionsInstanz.*.public_ip
+}
+
 
 ## terraform init
 ## terraform plan
